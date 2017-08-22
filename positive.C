@@ -1,11 +1,19 @@
-#include<iostream.h>
-using namespace std;
-
+#include <stdio.h>
 int main()
 {
-	int a;
-	cout<<"Enter any non-zero Number : ";
-	cin>>a;
-	(a>0)?cout<<"Number is positive":cout<<"Number is negative";
-	return 0;
+    double number;
+
+    printf("Enter a number: ");
+    scanf("%lf", &number);
+
+    if (number <= 0.0)
+    {
+        if (number == 0.0)
+            printf("You entered 0.");
+        else
+            printf("You entered a negative number.");
+    }
+    else
+        printf("You entered a positive number.");
+    return 0;
 }
